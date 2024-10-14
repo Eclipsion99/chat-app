@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="main">
+      <div class="left">
+        <div id="top">
+          <input type="text" id="register" placeholder="Enter username" />
+          <button onclick="btnRegister()" class="register-btn">Register</button>
+        </div>
+        <hr class="h-line" />
+        <p class="users-text">Active users</p>
+        <ul id="active-users"></ul>
+      </div>
+
+      <hr class="line" />
+
+      <div class="right">
+        <div class="recipient-box">
+          <h1 class="recipient-text">Recipient</h1>
+        </div>
+        <div class="all-texts">
+          <ul id="list"></ul>
+        </div>
+        <div class="msg">
+          <div class="temp-text">
+            <input type="text" id="text" placeholder="Enter message" />
+          </div>
+          <button onclick="btnClick()" class="send-btn">
+            <img
+              src="images/paper-plane-solid (1).svg"
+              alt="photo"
+              class="send-icon"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
+
+<!-- <div class="box">
+  <p>${sessionStorage.getItem("chatUser")}<span class="online"></span></p>
+</div> -->
